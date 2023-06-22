@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conference | Delete Conference</title>
+    <style>
+        body{
+              text-align: center;
+              font-family: sans-serif;
+              background-color: rgb(99, 92, 92);
+          }
+
+          .conference{
+              width: 30%;
+              margin: auto;
+              display: flex;
+              justify-content: space-between;
+              align-items:center ;
+          }
+
+          .conference p:first-child{
+              font-size: 22px;
+              font-weight: 700;
+          }
+    </style>
+</head>
+<body>
+    <h1>{{ conference.name }}</h1>
+    <hr/>
+    <div>
+        <div class="conference">
+        <p>Date</p>
+        <p>{{ conference.date }}</p>
+    </div>
+
+    <div class="conference">
+        <p>Location</p>
+        <p>{{ conference.location }}</p>
+    </div>
+        <a href="./deleteConfirm">Delete</a>
+    </div>
+</body>
+</html>
